@@ -26,8 +26,7 @@ public class AboutActivity extends AppCompatActivity {
 
         Button githubButton = findViewById(R.id.btn_github);
         githubButton.setOnClickListener(v -> {
-
-            String url = "https://github.com/your-username/hazard-alert-app";
+            String url = "https://github.com/farzana-534/HazardGoApplication.git";
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse(url));
             startActivity(intent);
