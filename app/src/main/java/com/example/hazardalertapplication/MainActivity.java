@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FusedLocationProviderClient fusedLocationClient;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
 
-    private final String HAZARDS_URL = "http://10.20.140.152/hazard_api/get_hazards.php";
+    private final String HAZARDS_URL = "http://10.50.223.160/hazard_api/get_hazards.php";
     private RequestQueue requestQueue;
     private JSONArray cachedHazards;
     private final Map<Integer, BitmapDescriptor> iconCache = new HashMap<>();
@@ -378,7 +378,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void submitHazardToServer(double lat, double lng, String category, String description, String iconName) {
-        String url = "http://10.20.140.152/hazard_api/report_hazards.php";
+        String url = "http://10.50.223.160/hazard_api/report_hazards.php";
 
         StringRequest request = new StringRequest(Request.Method.POST, url,
                 response -> {
