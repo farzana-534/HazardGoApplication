@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/member4"
+        android:padding="8dp"
+        android:background="@color/primary_light"
+        android:layout_marginEnd="16dp"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FARZANA BINTI MAT RIDZUAN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 2025159497 | CDCS240"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TASK: MOBILE APPLICATION DEVELOPER"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"/>
+
+    </LinearLayout>
+</LinearLayout>
